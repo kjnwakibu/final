@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Plan Your Next Trip in Andorra!</h1>
+    <h2>Enter a City Here</h2>
+    <form method="post" action="/displayPlace">
+        <input id="input" type="text" placeholder="Anyós, Arans, Arinsal" name="cityName">
+        <button type="submit">Enter</button>
+    </form>
+    <form action="/displaySavedDestinations" method="get">
+        <h2>Visit Saved Destinations</h2>
+        <button type="submit" id="visit-btn">Here</button>
+    </form>
+
+        <div>
+            <h2>Top Destinations</h3>
+            <% places.forEach(function(item) { %>
+                <div class="top-five">
+                    <h2 class="name"><%= item["name"] %></h2>
+                    <p class="region">Region: <%= item["region"] %></p>
+                    <p class="pop">Population: <%= item["population"] %></p>
+                </div>
+            <% }); %>
+            
+        </div>
+</body>
+</html>

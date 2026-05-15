@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1><%= city.name %></h1>
+    <div id="place-data">
+        <p>Region: <%= city.region %></p>
+        <p>Latitude: <%= city.latitude %></p>
+        <p>Longitude: <%= city.longitude %></p>
+        <p>Population: <%= city.population %></p>
+    </div>
+    <form method="post" action="/saveDestination">
+        <input type="hidden" name="name" value="<%= city.name %>">
+        <button id="save-btn" type="submit" name="<%= city['name'] %>">Save Destination</button>
+    </form>
+    <a href="/">HOME</a>
+</body>
+</html>

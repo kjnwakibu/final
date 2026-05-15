@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Saved Destinations</h1>
+    <form action="/clearDatabase" method="get">
+        <button type="submit" id="clear-btn">Clear</button>
+    </form>
+    <div>
+        <% cities.forEach(function(city) { %>
+            <div class="top-five">
+                <h2><%= city.name %></h2>
+                <p> Region: <%= city.region %></p>
+                <p>Population: <%= city.population %></p>
+            </div>
+        <% }) %>
+    </div>
+    <a href="/">HOME</a>
+</body>
+</html>
