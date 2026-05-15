@@ -1,0 +1,60 @@
+@import url('https://googleapis.com');
+
+body {
+    background-color: darkblue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h1, h2, p {
+    color: white;
+    text-align: center;
+}
+
+.top-five {
+    background-color: black;
+    width: 50rem;
+    margin-left: 22rem;
+}
+
+.region {
+    color: antiquewhite;
+    text-align: center;
+}
+
+.pop {
+    color:azure;
+    text-align: center;
+}
+
+.name {
+    text-align: center;
+}
+
+#visit-btn {
+    margin-left: 45rem;
+}
+
+
+#input {
+    margin-left: 40rem;
+    width: 10rem;
+    height: 20px;
+}
+
+#place-data {
+    font-size: 20px;
+}
+
+#save-btn {
+    margin-left: 43rem;
+}
+ a {
+    font-size: 25px;
+ }
+
+ #clear-btn {
+    margin-left: 45rem;
+    font-size: 20px;
+ }
+ 
